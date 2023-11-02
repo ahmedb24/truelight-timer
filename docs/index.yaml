@@ -3,7 +3,7 @@ entries:
   truelight-timer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-02T15:37:11.367615165+01:00"
+    created: "2023-11-02T16:03:25.16553424+01:00"
     description: A Helm chart for Kubernetes
     digest: e94d0c1265333fa9029f9ea2b43146ebd0f21c2044d90f2ff3b7174083804c13
     name: truelight-timer
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://github.com/ahmedb24/truelight-timer.git/truelight-timer-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-02T15:37:11.366968465+01:00"
+generated: "2023-11-02T16:03:25.16466834+01:00"
