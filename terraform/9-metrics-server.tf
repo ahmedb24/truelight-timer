@@ -26,18 +26,13 @@ resource "helm_release" "metrics-server" {
   depends_on = [aws_eks_fargate_profile.kube-system]
 }
 
-resource "helm_release" "metrics-server" {
-  name = "metrics-server"
+resource "helm_release" "truelight-timer" {
+  name = "truelight-timer"
 
-  repository = "https://kubernetes-sigs.github.io/metrics-server/"
-  chart      = "metrics-server"
-  namespace  = "kube-system"
-  version    = "3.8.2"
-
-  set {
-    name  = "metrics.enabled"
-    value = false
-  }
+  repository = "https://truelight-timer.github.io/charts/"
+  chart      = "truelight-timer"
+  namespace  = "staging"
+  version    = "1.0.0"
 
   depends_on = [aws_eks_fargate_profile.kube-system]
 }
